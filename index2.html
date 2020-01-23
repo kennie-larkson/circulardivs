@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const drawCircle = ( width, height, bgColor)=>{
+
+           const div = document.createElement('div');
+           div.style.cssText = 'width:'+width+'px;'+'height:'+height+'px;'+'background-color:'+bgColor+'; border-radius: 100%;';
+        
+        //    div.style.cssText = 'width: 500px; height: 500px; background-color: blue; border-radius: 100%';
+           document.body.appendChild(div);
+            
+        }
+
+        drawCircle(700,700,'#adc');
+    </script>
+</body>
+</html>
