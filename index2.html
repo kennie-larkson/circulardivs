@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JavaScript Circle</title>
 </head>
 <body>
     
@@ -12,14 +12,16 @@
         const drawCircle = ( width, height, bgColor)=>{
 
            const div = document.createElement('div');
-           div.style.cssText = 'width:'+width+'px;'+'height:'+height+'px;'+'background-color:'+bgColor+'; border-radius: 100%;';
+           const cssstyle = 'width:'+width+'px;'+'height:'+height+'px;'+'background-color:'+bgColor+'; border-radius: 100%; border: 1px solid black';
+           div.style.cssText = cssstyle;
         
         //    div.style.cssText = 'width: 500px; height: 500px; background-color: blue; border-radius: 100%';
            document.body.appendChild(div);
             
         }
 
-        drawCircle(700,700,'#adc');
+        drawCircle(700,700,'lightbrown');
+        // setInterval(drawCircle(700,700,'rebeccapurple'),5000);
     </script>
 </body>
 </html>
